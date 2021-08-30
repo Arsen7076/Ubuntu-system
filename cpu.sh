@@ -17,7 +17,8 @@ echo "13.Loaded kernel modules"
 echo "14.Socket and port information"
 echo "15.Installed packages"
 fi
-case "$1" in
+read number
+case "$number" in
 1) hostnamectl;;
 2) sudo dmidecode -t 2;;
 3) sudo mpstat;;
